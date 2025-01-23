@@ -8,6 +8,14 @@
 //   { name: "Contact", link: "#contact" },
 // ];
 
+export const navItems = [
+  { name: "Home", link: "#home", icon: <GoHomeFill /> },
+  { name: "About", link: "#about", icon: <FaUser /> },
+  { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
+  { name: "Experience", link: "#experience", icon: <FaComments /> },
+  { name: "Contact", link: "#contact", icon: <FaEnvelope /> },
+];
+
 export const gridItems = [
   {
     id: 1,

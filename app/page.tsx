@@ -20,15 +20,7 @@ import {
 } from "react-icons/fa";
 import { GoHomeFill } from "react-icons/go";
 
-export const navItems = [
-  { name: "Home", link: "#home", icon: <GoHomeFill /> },
-  { name: "About", link: "#about", icon: <FaUser /> },
-  { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
-  { name: "Experience", link: "#experience", icon: <FaComments /> },
-  { name: "Contact", link: "#contact", icon: <FaEnvelope /> },
-];
-
-export default function Home() {
+export default function Page() {
   return (
     <main className="relative dark:bg-black bg-white justify-center items-center flex flex-col mx-auto sm:px-10 px-5 overflow-clip">
       <div className="max-w-7xl w-full">
@@ -47,3 +39,11 @@ export default function Home() {
     </main>
   );
 }
+
+export const navItems = [
+  { name: "Home", link: "#home", icon: <GoHomeFill /> },
+  { name: "About", link: "#about", icon: <FaUser /> },
+  { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
+  { name: "Experience", link: "#experience", icon: <FaComments /> },
+  { name: "Contact", link: "#contact", icon: <FaEnvelope /> },
+];
