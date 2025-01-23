@@ -1,24 +1,16 @@
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { AiFillHome } from "react-icons/ai";
-import Image from "next/image";
 import RecentProject from "@/components/RecentProject";
-// import { navItems } from "@/data";
-import Clients from "@/components/Clients";
-import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
+import { navItems } from "@/data";
 import Footer from "@/components/Footer";
 import Work from "@/components/Work";
 
-// Floating NavBar Icon
-import {
-  FaUser,
-  FaProjectDiagram,
-  FaComments,
-  FaEnvelope,
-} from "react-icons/fa";
-import { GoHomeFill } from "react-icons/go";
+// import Approach from "@/components/Approach";
+// import { AiFillHome } from "react-icons/ai";
+// import Image from "next/image";
+// import Clients from "@/components/Clients";
+// import Experience from "@/components/Experience";
 
 export default function Page() {
   return (
@@ -39,11 +31,3 @@ export default function Page() {
     </main>
   );
 }
-
-export const navItems = [
-  { name: "Home", link: "#home", icon: <GoHomeFill /> },
-  { name: "About", link: "#about", icon: <FaUser /> },
-  { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
-  { name: "Experience", link: "#experience", icon: <FaComments /> },
-  { name: "Contact", link: "#contact", icon: <FaEnvelope /> },
-];

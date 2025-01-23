@@ -1,4 +1,5 @@
 /* Bento Grid  adalah wrap semua bento items, Bento Grid Items adalah isi dari bento */
+"use client";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import { gridItems } from "@/data";

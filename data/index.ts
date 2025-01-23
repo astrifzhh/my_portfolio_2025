@@ -1,19 +1,19 @@
 /* Berisi kumpulan semua data berupa teks dan juga gambar yang ditambahkan ke dalam konten website */
-
-// export const navItems = [
-//   { name: "Home", link: "#home" },
-//   { name: "About", link: "#about" },
-//   { name: "Projects", link: "#projects" },
-//   { name: "Testimonials", link: "#testimonials" },
-//   { name: "Contact", link: "#contact" },
-// ];
+"use client";
+import {
+  FaUser,
+  FaProjectDiagram,
+  FaComments,
+  FaEnvelope,
+} from "react-icons/fa";
+import { GoHomeFill } from "react-icons/go";
 
 export const navItems = [
-  { name: "Home", link: "#home", icon: <GoHomeFill /> },
-  { name: "About", link: "#about", icon: <FaUser /> },
-  { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
-  { name: "Experience", link: "#experience", icon: <FaComments /> },
-  { name: "Contact", link: "#contact", icon: <FaEnvelope /> },
+  { name: "Home", link: "#home", icon: GoHomeFill },
+  { name: "About", link: "#about", icon: FaUser },
+  { name: "Projects", link: "#projects", icon: FaProjectDiagram },
+  { name: "Experience", link: "#experience", icon: FaComments },
+  { name: "Contact", link: "#contact", icon: FaEnvelope },
 ];
 
 export const gridItems = [
