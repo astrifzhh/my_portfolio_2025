@@ -1,20 +1,56 @@
 /* Berisi kumpulan semua data berupa teks dan juga gambar yang ditambahkan ke dalam konten website */
 "use client";
+import { ReactElement, ReactNode } from "react";
 import {
   FaUser,
   FaProjectDiagram,
   FaComments,
   FaEnvelope,
 } from "react-icons/fa";
+import { MdLuggage } from "react-icons/md";
 import { GoHomeFill } from "react-icons/go";
+import { TiHeartOutline } from "react-icons/ti";
 
-export const navItems = [
-  { name: "Home", link: "#home", icon: GoHomeFill },
-  { name: "About", link: "#about", icon: FaUser },
-  { name: "Projects", link: "#projects", icon: FaProjectDiagram },
-  { name: "Experience", link: "#experience", icon: FaComments },
-  { name: "Contact", link: "#contact", icon: FaEnvelope },
+// In your data file (likely @/data)
+export const navItems: {
+  name: string;
+  link: string;
+  icon: typeof GoHomeFill | ReactNode;
+}[] = [
+  {
+    name: "Home",
+    link: "#home",
+    icon: GoHomeFill,
+  },
+  {
+    name: "About",
+    link: "#about",
+    icon: FaUser,
+  },
+  {
+    name: "Projects",
+    link: "#projects",
+    icon: MdLuggage,
+  },
+  {
+    name: "Experience",
+    link: "#experience",
+    icon: TiHeartOutline,
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+    icon: FaEnvelope,
+  },
 ];
+
+// export const navItems = [
+//   { name: "Home", link: "#home", icon: GoHomeFill },
+//   { name: "About", link: "#about", icon: FaUser },
+//   { name: "Projects", link: "#projects", icon: FaProjectDiagram },
+//   { name: "Experience", link: "#experience", icon: FaComments },
+//   { name: "Contact", link: "#contact", icon: FaEnvelope },
+// ];
 
 export const gridItems = [
   {

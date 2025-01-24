@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, ReactNode } from "react";
 import {
   motion,
   AnimatePresence,
@@ -18,7 +18,7 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
+    icon?: ReactNode;
   }[];
   className?: string;
 }) => {
@@ -69,12 +69,6 @@ export const FloatingNav = ({
           borderRadius: "12px",
           border: "1px solid rgba(255, 255, 255, 0.125)",
           backgroundColor: "var(--bg-navbar)",
-
-          // // backgroundColor: "rgba(17, 25, 40, 0.75)",
-          // backgroundColor:
-          //   theme === "light"
-          //     ? "rgba(255, 255, 255, 0.75)"
-          //     : "rgba(17, 25, 40, 0.75)",
         }}
       >
         {navItems.map((navItem: any, idx: number) => (
@@ -89,7 +83,7 @@ export const FloatingNav = ({
               className="block sm:hidden"
               style={{ color: "var(--icon-fill)" }}
             >
-              {navItem.icon}
+              <navItem.icon />
             </span>
             {/* add !cursor-pointer */}
             {/* remove hidden sm:block for the mobile responsive */}
