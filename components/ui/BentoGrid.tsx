@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 import Lottie from "react-lottie";
+
 import { BackgroundGradientAnimation } from "./GradientBackground";
-import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
+// import { GlobeDemo } from "./GridGlobe";
 
 import { FiCopy } from "react-icons/fi";
 
@@ -108,7 +109,18 @@ export const BentoGridItem = ({
             {description}
           </div>
 
-          {id === 2 && <GlobeDemo />}
+          {id === 2 && (
+            <div className="w-fit h-full absolute">
+              {/* Called Card Content */}
+              {img && (
+                <img
+                  // src={img}
+                  // alt={img}
+                  className={cn("object-cover object-center")}
+                />
+              )}
+            </div>
+          )}
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">

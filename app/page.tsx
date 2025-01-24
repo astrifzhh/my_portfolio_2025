@@ -1,20 +1,26 @@
 "use client";
 
-import Hero from "@/components/Hero";
-import Grid from "@/components/Grid";
 import { ReactNode } from "react";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import RecentProject from "@/components/RecentProject";
 import { navItems } from "@/data";
-import Footer from "@/components/Footer";
-import Work from "@/components/Work";
 
-// import { AiFillHome } from "react-icons/ai";
-// import Image from "next/image";
-// import Clients from "@/components/Clients";
-// import Experience from "@/components/Experience";
+import dynamic from "next/dynamic";
 
-export default function Page() {
+// Components
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
+const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
+const FloatingNav = dynamic(
+  () => import("@/components/ui/FloatingNavbar").then((mod) => mod.FloatingNav),
+  {
+    ssr: false,
+  }
+);
+const RecentProject = dynamic(() => import("@/components/RecentProject"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
+const Work = dynamic(() => import("@/components/Work"), { ssr: false });
+
+export default function Home() {
   return (
     <main className="relative dark:bg-black bg-white justify-center items-center flex flex-col mx-auto sm:px-10 px-5 overflow-clip">
       <div className="max-w-7xl w-full">

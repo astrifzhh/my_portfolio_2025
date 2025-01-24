@@ -69,9 +69,9 @@ export const gridItems = [
     title: "Traveling will always be my❤️",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
+    imgClassName: "w-full h-full",
+    titleClassName: "justify-end",
+    img: "/bg-purple.jpg",
     spareImg: "",
   },
   {
