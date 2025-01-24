@@ -61,6 +61,8 @@ interface WorldProps {
 let numbersOfRings = [0];
 
 export function Globe({ globeConfig, data }: WorldProps) {
+  const globeRef = useRef<ThreeGlobe | null>(null);
+
   const [globeData, setGlobeData] = useState<
     | {
         size: number;
@@ -71,8 +73,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
       }[]
     | null
   >(null);
-
-  const globeRef = useRef<ThreeGlobe | null>(null);
 
   const defaultProps = {
     pointSize: 1,
