@@ -6,7 +6,6 @@ import { navItems } from "@/data";
 import Footer from "@/components/Footer";
 import Work from "@/components/Work";
 
-// import Approach from "@/components/Approach";
 // import { AiFillHome } from "react-icons/ai";
 // import Image from "next/image";
 // import Clients from "@/components/Clients";
@@ -24,7 +23,6 @@ export default function Page() {
           {/* <Clients /> */}
           <Work />
           {/* <Experience /> */}
-          {/* <Approach /> */}
           <Footer />
         </h1>
       </div>
