@@ -41,7 +41,7 @@ const Work = () => {
                 <p className="text-base mt-2">UI UX Designer</p>
               </div>
               <div className="text-right text-gray-500 sm:text-xs text-base">
-                <p>March 2023 - Present</p>
+                <p>July 2023 - Present</p>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Work = () => {
                 <p className="text-base mt-2">UI UX Designer</p>
               </div>
               <div className="text-right text-gray-500 sm:text-xs text-base">
-                <p>January - March 2023</p>
+                <p>February - July 2023</p>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ const Work = () => {
                 <p className="text-base mt-2">Front End Developer</p>
               </div>
               <div className="text-right text-gray-500 sm:text-xs text-base">
-                <p>August - December 2022</p>
+                <p>January - March 2023</p>
               </div>
             </div>
           </div>
@@ -181,7 +181,7 @@ const Work = () => {
                 <p className="text-base mt-2">Social Media Admin</p>
               </div>
               <div className="text-right text-gray-500 sm:text-xs text-base">
-                <p>August - December 2022</p>
+                <p>August - November 2021</p>
               </div>
             </div>
           </div>
