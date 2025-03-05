@@ -41,7 +41,7 @@ const Work = () => {
                 <p className="text-base mt-2">UI UX Designer</p>
               </div>
               <div className="text-right text-gray-500 sm:text-xs text-base">
-                <p>August - December 2022</p>
+                <p>March 2023 - Present</p>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Work = () => {
                 <p className="text-base mt-2">UI UX Designer</p>
               </div>
               <div className="text-right text-gray-500 sm:text-xs text-base">
-                <p>August - December 2022</p>
+                <p>January - March 2023</p>
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const Work = () => {
             </div>
 
             <div className="relative">
-              <div className="absolute translate-y-2 -translate-x-3 lg:h-24 md:h-24 sm:h-30 h-32 border-l-2 border-dashed border-gray-500"></div>
+              <div className="absolute translate-y-2 -translate-x-3 lg:h-24 md:h-24 sm:h-30 h-36 border-l-2 border-dashed border-gray-500"></div>
             </div>
 
             {/* Menampilkan Logo Company */}
@@ -130,7 +130,7 @@ const Work = () => {
             </div>
 
             <div className="relative">
-              <div className="absolute translate-y-2 -translate-x-3 lg:h-24 md:h-24 sm:h-28 h-28 border-l-2 border-dashed border-gray-500"></div>
+              <div className="absolute translate-y-2 -translate-x-3 lg:h-24 md:h-24 sm:h-28 h-36 border-l-2 border-dashed border-gray-500"></div>
             </div>
 
             {/* Menampilkan Logo Company */}

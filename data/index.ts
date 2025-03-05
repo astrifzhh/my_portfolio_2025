@@ -1,6 +1,8 @@
-/* Berisi kumpulan semua data berupa teks dan juga gambar yang ditambahkan ke dalam konten website */
 "use client";
+
 import { ReactElement, ReactNode } from "react";
+
+// Icon Collections
 import {
   FaUser,
   FaProjectDiagram,
@@ -11,7 +13,7 @@ import { MdLuggage } from "react-icons/md";
 import { GoHomeFill } from "react-icons/go";
 import { TiHeartOutline } from "react-icons/ti";
 
-// In your data file (likely @/data)
+/* In your data file (likely @/data) */
 export const navItems: {
   name: string;
   link: string;
@@ -19,7 +21,7 @@ export const navItems: {
 }[] = [
   {
     name: "Home",
-    link: "#home",
+    link: "/",
     icon: GoHomeFill,
   },
   {
@@ -42,15 +44,12 @@ export const navItems: {
     link: "#contact",
     icon: FaEnvelope,
   },
+  // {
+  //   name: "Blog",
+  //   link: "/blog",
+  //   icon: FaComments,
+  // },
 ];
-
-// export const navItems = [
-//   { name: "Home", link: "#home", icon: GoHomeFill },
-//   { name: "About", link: "#about", icon: FaUser },
-//   { name: "Projects", link: "#projects", icon: FaProjectDiagram },
-//   { name: "Experience", link: "#experience", icon: FaComments },
-//   { name: "Contact", link: "#contact", icon: FaEnvelope },
-// ];
 
 export const gridItems = [
   {
@@ -122,25 +121,73 @@ export const projects = [
     id: 1,
     title: "SMIS - Website",
     des: "Explore school system for more easier administration and archiving.",
-    img: "/project/p1.svg",
+    img: "/project/p1.png",
     iconLists: ["/project/figma.svg", "/project/notion.svg"],
-    link: "Coming Soon❤️",
+    link: "WebsiteSMIS",
   },
-  {
-    id: 2,
-    title: "SMIS - Mobile APP",
-    des: "Explore school system for more easier administration and archiving.",
-    img: "/project/p2.svg",
-    iconLists: ["/project/figma.svg", "/project/notion.svg"],
-    link: "Coming Soon❤️",
-  },
+
+  // Project Mobile Soon
+  // {
+  //   id: 2,
+  //   title: "SMIS - Mobile APP",
+  //   des: "Explore school system for more easier administration and archiving.",
+  //   img: "/project/p2.svg",
+  //   iconLists: ["/project/figma.svg", "/project/notion.svg"],
+  //   link: "MobileSMIS",
+  // },
+
   {
     id: 3,
     title: "Point of Sales",
     des: "A modern Point of Sales (POS) system is an intuitive, user-friendly interface designed to streamline retail transactions, enhance customer experience, and provide valuable insights for business owners.",
+    img: "/project/p3.png",
+    iconLists: ["/project/figma.svg", "/project/notion.svg"],
+    link: "PointofSales",
+  },
+];
+
+export const project_detail = [
+  {
+    id: 1,
+    title: "School Management Information System",
+    des: "Explore school system for more easier administration and archiving.",
+    requirement: [
+      { key: "Role", value: "User Research, Visual and Interaction Design" },
+      {
+        key: "Team",
+        value: "1 UI UX Designer, 4 Fullstack",
+      },
+    ],
+    content: [
+      { key: "content1", value: "it is a content of content1" },
+      { key: "content2", value: "it is a content of content2" },
+    ],
+    img: "/project/detail/img_project1_1.png",
+    iconLists: ["/project/figma.svg", "/project/notion.svg"],
+    link: "/project_detail/1",
+  },
+  // {
+  //   id: 2,
+  //   title: "SMIS - Mobile APP",
+  //   des: "Explore school system for more easier administration and archiving.",
+  //   img: "/project/p2.svg",
+  //   iconLists: ["/project/figma.svg", "/project/notion.svg"],
+  //   link: "project_detail/2",
+  // },
+  {
+    id: 3,
+    title: "Point of Sales",
+    des: "A modern Point of Sales (POS) system is an intuitive, user-friendly interface designed to streamline retail transactions, enhance customer experience, and provide valuable insights for business owners.",
+    requirement: [
+      { key: "Role", value: "User Research, Visual and Interaction Design" },
+      {
+        key: "Team",
+        value: "1 UI UX Designer, 2 Fullstack",
+      },
+    ],
     img: "/project/p3.svg",
     iconLists: ["/project/figma.svg", "/project/notion.svg"],
-    link: "Coming Soon❤️",
+    link: "project_detail/2",
   },
 ];
 
