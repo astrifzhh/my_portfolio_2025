@@ -54,8 +54,8 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    // const text = "astrifauziah287@gmail.com";
-    navigator.clipboard.writeText("astrifauziah287@gmail.com");
+    // const text = "hi.astrifzh@gmail.com";
+    navigator.clipboard.writeText("hi.astrifzh@gmail.com");
 
     setCopied(true);
   };
@@ -105,7 +105,7 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
             {title}
           </div>
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm z-10 text-black-100 dark:text-[#c1c2d3]">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm z-10 text-[#c1c2d3]">
             {description}
           </div>
 
@@ -123,7 +123,7 @@ export const BentoGridItem = ({
           )}
 
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2 text-[#f2dfff] dark:text-gray-500">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {["React.js", "Next.js", "Adobe Illustator"].map((item) => (
                   <span
@@ -133,7 +133,7 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg text-center dark:bg-[#10132E] bg-[]"></span>
+                <span className="py-4 px-3 rounded-lg text-center dark:bg-[#10132E]"></span>
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 <span className="py-4 px-3 rounded-lg text-center dark:bg-[#10132E] bg-[#F4EFF9]"></span>

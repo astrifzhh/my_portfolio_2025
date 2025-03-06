@@ -229,12 +229,12 @@ const POS = () => {
             />
             <div className="flex flex-col items-center justify-center gap-4">
               <img
-                className="h-1/2 w-auto rounded-md lg:rounded-lg"
+                className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                 src="/project/wireframe/pos_1.png"
                 alt="Wireframe POS 1"
               />
               <img
-                className="h-1/2 w-auto rounded-md lg:rounded-lg"
+                className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                 src="/project/wireframe/pos_2.png"
                 alt="Wireframe POS 2"
               />
@@ -268,12 +268,12 @@ const POS = () => {
               />
               <div className="flex flex-col items-center justify-center gap-4">
                 <img
-                  className="h-1/2 w-auto rounded-md lg:rounded-lg"
+                  className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                   src="/project/UI/pos_1.png"
                   alt="UI LMS"
                 />
                 <img
-                  className="h-1/2 w-auto rounded-md lg:rounded-lg"
+                  className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                   src="/project/UI/pos_2.png"
                   alt="UI Create LMS"
                 />

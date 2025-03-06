@@ -219,12 +219,12 @@ const WebsiteSMIS = () => {
                 />
                 <div className="flex flex-col items-center justify-center gap-4">
                   <img
-                    className="block mx-auto w-auto h-1/2 rounded-md lg:rounded-lg"
+                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                     src="/project/brainstorming/doc_1.jpeg"
                     alt=""
                   />
                   <img
-                    className="block mx-auto w-auto h-1/2 rounded-md lg:rounded-lg"
+                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                     src="/project/brainstorming/doc_2.jpeg"
                     alt=""
                   />
@@ -297,12 +297,12 @@ const WebsiteSMIS = () => {
             />
             <div className="flex flex-col items-center justify-center gap-4">
               <img
-                className="h-1/2 w-auto rounded-md lg:rounded-lg"
+                className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                 src="/project/wireframe/website_lms2.png"
                 alt="Wireframe LMS"
               />
               <img
-                className="h-1/2 w-auto rounded-md lg:rounded-lg"
+                className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                 src="/project/wireframe/website_lms3.png"
                 alt="Wireframe Create LMS"
               />
@@ -328,20 +328,20 @@ const WebsiteSMIS = () => {
                 Final UI design for SMIS (School Management Information System).
               </p>
             </div>
-            <div className="flex flex-row items-center justify-center gap-4 p-8 lg:p-20">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 p-8 lg:p-20">
               <img
-                className="w-1/2 h-auto"
+                className="w-full lg:w-1/2 h-auto rounded-md lg:rounded-lg object-cover"
                 src="/project/UI/dashboard_smis.png"
                 alt="UI Dashboard"
               />
-              <div className="flex flex-col items-center justify-center gap-4">
+              <div className="flex flex-col items-center justify-center gap-4 w-full lg:w-1/2">
                 <img
-                  className="h-1/2 w-auto"
+                  className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                   src="/project/UI/lms_folder.png"
                   alt="UI LMS"
                 />
                 <img
-                  className="h-1/2 w-auto"
+                  className="w-full h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] rounded-md lg:rounded-lg object-cover"
                   src="/project/UI/lms_create.png"
                   alt="UI Create LMS"
                 />
