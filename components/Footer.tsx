@@ -16,7 +16,7 @@ const Footer = () => {
           Reach out to me today—I&apos;d love to chat about how I can help you
           reach your goals! 😊
         </p>
-        <a href="mailto:astrifauziah287@gmacil.com">
+        <a href="mailto:hi.astrifzh@gmail.com">
           <MagicButton
             title="Hit me up"
             icon={<FaLocationArrow />}
@@ -24,7 +24,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-4">
+      <div className="flex mt-24 md:flex-row flex-col justify-between items-center gap-4">
         <p className="md:text-base text-sm md:font-normal font-light text-white-200">
           Copyright © 2025 Astri Fauziah
         </p>
