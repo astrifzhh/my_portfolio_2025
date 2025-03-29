@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+
 import ThemeToggle from "../ThemeToggle";
 import { useTheme } from "next-themes";
 
@@ -43,9 +44,6 @@ export const FloatingNav = ({
     }
   });
 
-  // Get theme
-  const { theme } = useTheme();
-
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -74,7 +72,9 @@ export const FloatingNav = ({
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
-            href={navItem.link}
+            // href={navItem.link}
+            // href={`/${navItem.link}`}
+            href={`/${navItem.link}`}
             className={cn(
               "relative items-center  flex space-x-1 dark:text-gray-200 text-gray-800 dark:hover:text-neutral-300 hover:text-neutral-500 font-semibold"
             )}

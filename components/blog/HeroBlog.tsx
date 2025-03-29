@@ -1,4 +1,5 @@
-import React from "react";
+"use client"; // This is a client-side component
+import React, { useEffect, useState } from "react";
 
 const HeroBlog = () => {
   return (

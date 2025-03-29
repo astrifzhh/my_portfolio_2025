@@ -3,12 +3,7 @@
 import { ReactElement, ReactNode } from "react";
 
 // Icon Collections
-import {
-  FaUser,
-  FaProjectDiagram,
-  FaComments,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaUser, FaComments, FaEnvelope } from "react-icons/fa";
 import { MdLuggage } from "react-icons/md";
 import { GoHomeFill } from "react-icons/go";
 import { TiHeartOutline } from "react-icons/ti";
@@ -44,11 +39,11 @@ export const navItems: {
     link: "#contact",
     icon: FaEnvelope,
   },
-  // {
-  //   name: "Blog",
-  //   link: "/blog",
-  //   icon: FaComments,
-  // },
+  {
+    name: "Blog",
+    link: "blog",
+    icon: FaComments,
+  },
 ];
 
 export const gridItems = [

@@ -2,7 +2,7 @@
 
 import HeroBlog from "@/components/blog/HeroBlog";
 import Footer from "@/components/Footer";
-import ListBlog from "@/components/ListBlog";
+import ListBlog from "@/components/blog/component/ListBlog";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 
