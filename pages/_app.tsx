@@ -3,40 +3,35 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "../app/globals.css"; // Ensure the path is correct
+import Script from "next/script";
 
-const GA_MEASUREMENT_ID = "G-LGQHZQC701";
+// const GA_MEASUREMENT_ID = "G-P29VHTL0M4";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      // Track page view on route change
-      if (typeof window !== "undefined" && (window as any).gtag) {
-        (window as any).gtag("config", GA_MEASUREMENT_ID, {
-          page_path: url,
-        });
-      }
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    // Clean up the event listener
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
-
-  return (
+  <>
     <ThemeProvider
       attribute="class"
       defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
     >
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-P29VHTL0M4"
+      />
+      <Script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-P29VHTL0M4');
+        `}
+      </Script>
+
       <Component {...pageProps} />
     </ThemeProvider>
-  );
+  </>;
 }
 
 export default MyApp;
