@@ -3,9 +3,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "../app/globals.css"; // Ensure the path is correct
-import Script from "next/script";
-
-// const GA_MEASUREMENT_ID = "G-P29VHTL0M4";
+// import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
   <>
@@ -15,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       enableSystem
       disableTransitionOnChange
     >
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-P29VHTL0M4"
       />
@@ -27,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
           gtag('config', 'G-P29VHTL0M4');
         `}
-      </Script>
+      </Script> */}
 
       <Component {...pageProps} />
     </ThemeProvider>

@@ -21,7 +21,7 @@ const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 const Work = dynamic(() => import("@/components/Work"), { ssr: false });
 
 // Google analytics
-ReactGA.initialize("G-TGVYZJ597D");
+ReactGA.initialize("G-P29VHTL0M4");
 
 // Send pageview with a custom path
 ReactGA.send({ hitType: "pageview", page: window.location.pathname });
