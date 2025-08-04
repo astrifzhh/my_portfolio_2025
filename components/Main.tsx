@@ -24,7 +24,7 @@ const Work = dynamic(() => import("@/components/Work"), { ssr: false });
 ReactGA.initialize("G-TGVYZJ597D");
 
 // Send pageview with a custom path
-ReactGA.send({ hitType: "pageview", page: "/my-path" });
+ReactGA.send({ hitType: "pageview", page: window.location.pathname });
 
 export default function Main() {
   return (
