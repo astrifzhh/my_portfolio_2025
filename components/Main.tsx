@@ -3,6 +3,7 @@
 import { ReactNode, useState, useEffect } from "react";
 import { navItems } from "@/data";
 import dynamic from "next/dynamic";
+import ReactGA from "react-ga4";
 
 // Lazy load all components
 const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
@@ -18,6 +19,12 @@ const RecentProject = dynamic(() => import("@/components/RecentProject"), {
 });
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 const Work = dynamic(() => import("@/components/Work"), { ssr: false });
+
+// Google analytics
+ReactGA.initialize("G-TGVYZJ597D");
+
+// Send pageview with a custom path
+ReactGA.send({ hitType: "pageview", page: "/my-path" });
 
 export default function Main() {
   return (
