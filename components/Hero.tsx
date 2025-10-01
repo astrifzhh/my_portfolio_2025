@@ -76,8 +76,8 @@ const Hero = () => {
             <div>
               <a
                 // Ini CV khusus buat virtus (nanti ganti)
-                href="/file/cv_astrifauziah.pdf"
-                download="cv_astrifauziah.pdf"
+                href="/file/CV_ASTRIFAUZIAH_UIUX.pdf"
+                download="CV_ASTRIFAUZIAH_UIUX.pdf"
                 className="block mt-6 md:mt-0"
               >
                 <MagicButton
